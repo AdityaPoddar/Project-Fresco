@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html, body{
+    height: 100%;
+    background: #293241;
+}
+
+.dashside-container{
+    display: flex;
+    flex-wrap: nowrap;
+    /* position: relative; */
+}
+
+.dashside-container > *:nth-child(1) {
+    flex: 1 1 15%;
+    /* min-width: 15ch; */
+}
+
+.dashside-container > *:nth-child(2) {
+    flex: 1 1 85%;
+    /* min-width: 25ch; */
+}
+
+/* ------------------------------------Reviews css-------------------------------------- */
+
+.main-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-content > *{
+    flex-basis: 100%;
+    margin: 40px;
+}
+
+.top-section{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+
+.top-right{
+    margin-right: 20px;
+}
+
+.fresco-logo{
+    width: 140px;
+    height: 140px;
+}
+
+/* background */
+.fresco-logo .cls-1{
+    fill: #98c1d9;
+    stroke-width: 0;
+}
+
+/* path */
+.fresco-logo .cls-2, .fresco-logo .cls-4{
+    stroke:#293241;
+    stroke-width: 0.75px;
+}
+
+/* dots */
+.fresco-logo .cls-3{
+    fill: #293241;
+    stroke-width: 0.75px;
+}
+
+.top-left {
+    width: auto;
+    height: auto;background: #181d25;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.top-left h1{
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.search-box{
+    width: 400px;
+    height: auto;
+    background: #ffffff;
+    display: flex;
+    justify-content:center;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.search-box input{
+    width: 100%;
+    height: 2rem;
+    background: #ffffff;
+    font-size: 1rem;
+    padding: 0 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-box button{
+    width: 2rem;
+    height: 2rem;
+    background: #3d5a80;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-box .material-icons{
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.radios{
+    display: inline-block;
+    margin: 20px 20px 0 0 ;
+}
+
+.radios input[type="radio"]{
+    margin-right: 10px;
+}
+
+span{
+    color: #ffffff;
+}
+
+.bottom-section{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+
+.bottom-section > *:nth-child(1) {
+    flex: 1 1 25%;
+}
+
+.bottom-section > *:nth-child(2) {
+    flex: 1 1 75%;
+}
+
+.left-section, .right-section{
+    /* width: 100%; */
+    height: auto;
+    background: #181d25;
+    border-radius: 20px;
+    padding: 20px;
+    gap: 20px;
+}
+
+.product-img{
+    min-width: 400px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.product-img img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.product-info{
+    margin-top: 20px;
+}
+
+.product-info p{
+    color: aliceblue;
+    padding: 10px;
+}
+
+.product-info h2{
+    color: aliceblue;
+    padding: 10px;
+}
+
+.right-section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.right-section > *{
+    flex-basis: 100%;
+}
+
+.rows{
+    min-height: 150px;
+    background: #3d5a80;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.rows > *{
+    padding: 20px;
+    color: aliceblue;
+}
+
+.customer-id{
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 0.8rem;
+}
+
+.review-delete-btn{
+    position: absolute;
+    z-index: 1;
+    top: 17px;
+    right: 17px;
+    background: #181d25;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 29px;
+    height: 29px;
+    padding: 0;
+}
+
+.review-delete-btn .material-icons{
+    margin-top: 3px;
+    font-size: 19px;
+}
+
+@media screen and (max-width: 1200px) {
+    
+    .right-section{
+        min-width: 460px;
+    }
+
+    .bottom-section{
+        flex-wrap: wrap;
+    }
+
+    .left-section{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+}
+
+@media screen and (max-width:900px) {
+    .left-section{
+        justify-content: center;
+    }
+
+    .left-section > *{
+        flex-basis: 100%;
+    }
+
+    .product-img{
+        width: 400px;
+    }
+
+    .product-info > *{
+        text-align: center;
+    }
+
+    .top-section form{
+        display: flex;
+    }
+
+    .top-right{
+        display: none;
+    }
+
+    .top-left{
+        flex-basis: 100%;
+    }
+    
+    .search-box{
+        width: 100%;
+    }
+}

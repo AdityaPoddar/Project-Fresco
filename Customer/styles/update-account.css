@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html{background: #293241;}
+
+a{
+    text-decoration: none;
+    color:#000;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.main-container{
+    display: grid;
+    place-items: center;
+    width: auto;
+    height: auto;
+    margin: 90px 0 30px 0;
+}
+
+.log-section{
+    display: flex;
+    width: 1000px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.6);
+}
+
+.log-card{
+    background: #ffff;
+    width: 500px;
+    height: 600px;
+    display: grid;
+    place-items: center;
+    padding: 60px;
+    border-radius: 0 20px 20px 0;
+}
+
+.log-card form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.log-card form > *{
+    margin: 20px 0;
+}
+
+.log-card form a{
+    text-align: center;
+    flex-basis: 100%;
+}
+
+input[type="text"], input[type="email"]{
+    flex-basis: 100%;
+    line-height: 2.6rem;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding: 0 20px;
+    box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.6);
+}
+
+.info-card{    
+    padding-top: 40px;
+    width: 500px;
+    height: auto;
+    background: linear-gradient(#3d5a80, #98c1d9);
+    border-radius: 20px 0 0 20px;
+}
+
+.info-container{
+    display: grid;
+    place-items: center;
+}
+
+.info-card h3{
+    color: #ffffff;
+    margin-top: 18px;
+}
+
+.info-card h5{
+    color: #ffffff;
+    margin-top: 56px;
+}
+
+.fresco-logo{
+    border-radius: 50%;
+}
+
+/* background */
+.fresco-logo .cls-1{
+    fill: #98c1d9;
+    stroke-width: 0;
+}
+
+/* path */
+.fresco-logo .cls-2, .fresco-logo .cls-4{
+    stroke:#293241;
+    stroke-width: 0.75px;
+}
+
+/* dots */
+.fresco-logo .cls-3{
+    fill: #293241;
+    stroke-width: 0.75px;
+}
+
+.fresco-logo{
+    width: 140px;
+}
+
+.logo{
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.726);
+    width: 140px;
+    height: 140px;
+    margin: 20px;
+}
+
+#update-btn{
+    display: block;
+    width: 100px;
+    height: auto;
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: 500;
+    line-height: 2.5rem;
+    border-radius: 30px;
+    cursor: pointer;
+    background: #35527a;
+    border: none;
+}

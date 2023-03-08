@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.sidebar{
+    background: #181d25e3;
+    min-width: 300px;
+    min-height: 100vh;
+    padding: 40px;
+    border-radius: 0;
+}
+
+.profile-image{
+    width: 160px;
+    margin: 20px auto;
+    border-radius: 50%;
+}
+
+.profile-image img{
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.sidebar h3{
+    color: #ffffff;
+    text-align: center;
+    
+}
+
+.nav{
+    margin-top: 50px;
+}
+
+.nav a{
+    padding:20px;
+    font-size: 0.9rem;
+    text-align: center;
+    color: #b8b8b8;
+    display: block;
+    transition: 100ms ease-in-out;
+}
+
+.nav a:hover{
+    color: #ffffff;
+    background: #ffffff1a;
+    border-radius: 5px;
+    /* font-size: 1.1rem; */
+    transition: 100ms ease-in-out;
+}
+
+.horizontal-nav{
+    display: none;
+    height: 48px;
+}
+
+.menu{
+    width: 36px;
+    height: 22px;
+    height: auto;
+    margin: 16px 40px;
+    display: none;
+    cursor: pointer;
+    /* border: 1px solid #ffffff; */
+    border-radius: 0;
+}
+
+.hamburger{
+    width: 24px;
+    height: 3px;
+    background: #3d5a80;
+    margin: 4px auto;
+    border-radius: 0;
+}
+
+.type-logo svg{
+    fill: aliceblue;
+    width: 100px;
+    height: auto;
+    position: absolute;
+    top: 16px;
+    left: 100px;
+}
+
+.topnav{
+    width: 100%;
+    height: 48px;
+    background: #181d25;
+    position: absolute;
+    border-radius: 0;
+    border-bottom: 1px solid #3d5a80;
+}
+
+@media screen and (max-width: 1020px){
+
+    .horizontal-nav{
+        display: block;
+        /* position: fixed; */
+    }
+
+    .topnav{
+        position: fixed;
+    }
+
+    .menu{
+        display: block;
+    }
+
+    .sidebar{
+        position: fixed;
+        top: 48px;
+        left: -300px;
+        transition: 300ms ease-in-out;
+        /* backdrop-filter: blur(3px); */
+    }
+
+    .sidebar.active{
+        position: fixed;
+        top: 48px;
+        left: 0;
+        transition: 300ms ease-in-out;
+    }
+}

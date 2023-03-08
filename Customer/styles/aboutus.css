@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.upper-grid{
+    display: grid;
+    place-items: center;
+    margin-top: 100px;
+}
+
+.upper-section{
+    position: relative;
+    width: 1260px;
+    height: auto;
+    border-radius: 20px;
+    display: grid;
+    place-items: center;
+}
+
+.filter{
+    position: absolute;
+    width: 1260px;
+    height: 250px;
+    background: #000000ab;
+    border-radius: 20px;
+}
+
+.upper-section img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.upper-section h1{
+    position: absolute;
+    color: #ffffff;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.about-us{
+    display: grid;
+    place-items: center;
+    margin: 40px 0;
+    padding: 20px;
+}
+
+.text{
+    display: grid;
+    place-items: center;
+    width: 1260px;
+}
+
+.about-us p{
+    width: 75ch;
+    padding: 10px;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.main-grid{
+    display: grid;
+    place-items: center;
+}
+
+.photos-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 1260px;
+    margin: 40px 0;
+}
+
+.photos-grid > *{
+    flex-basis: 0 0 33.333%;
+}
+
+.images{
+    width: 406.66px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.images img{
+    width: 100%;
+    height: 250px;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 1400px) {
+    
+    .upper-section, .filter, .photos-grid, .text{
+        width: 940px;
+    }
+
+    .about-us p{
+        width: 60ch;
+    }
+
+    /* .photos-grid > *{
+        flex:  0 100%;
+    } */
+
+    .images{
+        width: 460px;
+        height: auto;
+    }
+
+    .images img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+}
+
+@media screen and (max-width: 1080px) {
+    
+    .upper-section, .filter, .photos-grid, .text, .images{
+        width: 620px;
+    }
+
+    .upper-section, .photos-grid{
+        margin: 0 20px;
+    }
+
+    .photos-grid{
+        gap: 40px;
+    }
+
+}

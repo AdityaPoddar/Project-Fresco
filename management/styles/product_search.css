@@ -1,0 +1,26 @@
+#search
+{
+    display:inline-block;
+    color:#2196F3;
+    
+}
+button{
+
+display:inline-block;
+padding: 14px;
+background: #2196F3;
+color: white;
+font-size: 17px;
+border: 1px solid grey;
+border-left: none; /* Prevent double borders */
+cursor: pointer;
+border-radius:9px;
+}
+
+.radio
+{
+position:absolute;
+right:140px;
+top:180px;
+color:white;
+}

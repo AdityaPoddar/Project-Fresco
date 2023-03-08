@@ -1,0 +1,1 @@
+document.getElementById(tr).style.opacity = 0.2;
